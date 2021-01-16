@@ -1,0 +1,29 @@
+{
+  "name": "pangaea_backend_takehome",
+  "version": "1.0.0",
+  "description": "a HTTP notification system. A server (or set of servers) will keep track of topics -> subscribers where a topic is a string and a subscriber is an HTTP endpoint.",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/durotolu/Pangaea_Backend_Takehome.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/durotolu/Pangaea_Backend_Takehome/issues"
+  },
+  "homepage": "https://github.com/durotolu/Pangaea_Backend_Takehome#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.3.1"
+  }
+}
