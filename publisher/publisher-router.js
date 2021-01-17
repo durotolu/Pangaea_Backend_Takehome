@@ -1,6 +1,6 @@
-const router = require('express').Router();
+const publisher_router = require('express').Router();
 
-router.post('/:topic', (req, res) => {
+publisher_router.post('/:topic', (req, res) => {
   const postInfo = { ...req.body, topic: req.params.topic };
   console.log(postInfo.topic, postInfo.msg);
   axios.post(`http://localhost:5000/subscribe`)
@@ -14,4 +14,4 @@ router.post('/:topic', (req, res) => {
     });
 });
 
-module.exports = router;
+module.exports = publisher_router;
