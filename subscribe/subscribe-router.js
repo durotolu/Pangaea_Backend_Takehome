@@ -67,7 +67,7 @@ subscribe_server.post('/forward', (req, res) => {
         }))
         .then(() => {
           res.status(201).json({
-            'success': `sent ${tag} to ${responsesArray.length} subscribers`
+            'success': `sent ${tag} to ${responsesArray.length} subscriber(s)`
           });
         })
         .catch(error => {
